@@ -1,0 +1,163 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Raleway:wght@200&display=swap'); */
+/* font-family: 'Josefin Sans', sans-serif; */
+/* font-family: 'Raleway', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: stretch;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer"
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+    /* fallback for old browsers */
+    background: linear-gradient(to right, hsla(179, 100%, 77%, 0.384), hsla(307, 86%, 57%, 0.493));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+h1,h2{
+    color:rgb(255, 0, 128);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+/* empieza header */
+header{
+    grid-area: header;
+    width: 100%;
+    height: 650px;
+    /* fallback for old browsers */
+    background: linear-gradient(to right, hsla(179, 100%, 77%, 0.384), hsla(307, 86%, 57%, 0.493));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+nav ul a{
+    color: white;
+    font-weight: 100px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    font-size: 50px;
+}
+nav ul a:hover{
+    text-decoration: underline;
+}
+.header-text{
+    display: flex;
+    height: 600px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center; 
+}
+.header-text h1{
+    font-size: 70px;
+    color:white;
+    text-shadow: -2px 5px 0 #000,
+    5px 5px 0 #000,
+    5px -2px 0 #000,
+    -2px -2px 0 #000;
+}
+.header-text h2{
+    font-size: 60px;
+    font-weight: 300;
+    color:#fcfafafd;
+    text-shadow: -2px 5px 0 #000,
+    5px 5px 0 #000,
+    5px -2px 0 #000,
+    -2px -2px 0 #000;
+}
+.contenedor-productos{
+    display: block;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+.contenedor-productos img{
+    width: 40%;
+}
+/* BestSeller */
+.galeria-productos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.image-port{
+    width: 24%;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgb(0, 0, 0, .5);
+}
+.image-port img{
+    width:150px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+.contenedor-descuentos img{
+    width: 150px;
+}
+h4{
+    font-family: 'Mitr', sans-serif;
+    font-size: 50px;
+}
+.content-foo a{
+    font-size: 40px;
+    text-decoration: none;
+}
+.content-foo p{
+    font-size: 40px;
+    text-decoration: none;
+}
+@media (max-width:860px) {
+    body {
+        grid-template-areas:
+            "header main"
+            "header main"
+            "header main"
+            "footer footer"
+    }
+}
+
+@media (max-width:450px) {
+    body {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer"
+    }
+}
