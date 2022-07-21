@@ -31,7 +31,6 @@ footer{
 .contenedor{
     padding: 60px 0;
     width: 90%;
-    max-width: 1000px;
     margin: auto;
     overflow: hidden;
 }
@@ -70,6 +69,11 @@ li {
 }
 nav ul a:hover{
     text-decoration: underline;
+}
+.wave{
+    position: absolute;
+    bottom:0;
+    width:100%;
 }
 .header-text{
     display: flex;
@@ -113,16 +117,15 @@ nav ul a:hover{
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.image-port{
-    width: 24%;
+.hover-galeria{
     overflow: hidden;
     position: relative;
     cursor: pointer;
     box-shadow: 0 0 6px 0 rgb(0, 0, 0, .5);
 }
-.image-port img{
-    width:150px;
-    height: 150px;
+.hover-galeria img{
+    width:450px;
+    height: 450px;
     object-fit: cover;
     display: block;
 }
