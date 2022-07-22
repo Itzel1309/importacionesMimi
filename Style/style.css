@@ -70,11 +70,6 @@ li {
 nav ul a:hover{
     text-decoration: underline;
 }
-.wave{
-    position: absolute;
-    bottom:0;
-    width:100%;
-}
 .header-text{
     display: flex;
     height: 600px;
@@ -129,8 +124,14 @@ nav ul a:hover{
     object-fit: cover;
     display: block;
 }
+
+
 .contenedor-descuentos img{
     width: 150px;
+}
+.contenedor-productos img:hover{
+    padding: 20px;
+    transform: skewY(45deg);
 }
 h4{
     font-family: 'Mitr', sans-serif;
