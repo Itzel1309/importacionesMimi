@@ -21,7 +21,7 @@ main{
 }
 footer{
     grid-area: footer;
-    /* fallback for old browsers */
+        /* fallback for old browsers */
     background: linear-gradient(to right, hsla(179, 100%, 77%, 0.384), hsla(307, 86%, 57%, 0.493));
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
@@ -44,57 +44,46 @@ h1,h2{
 header{
     grid-area: header;
     width: 100%;
-    height: 650px;
+    height: 300px;
     /* fallback for old browsers */
     background: linear-gradient(to right, hsla(179, 100%, 77%, 0.384), hsla(307, 86%, 57%, 0.493));
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 nav{
-    text-align: right;
-    padding: 30px 50px 0 0;
+    text-align: center;
+    padding: 0;
 }
-nav ul a{
-    color: white;
-    font-weight: 100px;
-    text-decoration: none;
-    margin-right: 10px;
-}
-ul {
+ul li{
     list-style: none;
+    font-size: 30px;
 }
 
-li {
-    display: inline-block;
-    font-size: 50px;
-}
 nav ul a:hover{
     text-decoration: underline;
 }
 .header-text{
     display: flex;
-    height: 600px;
+    height: 200px;
     width: 100%;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
-    text-align: center; 
+    flex-direction: column; 
 }
 .header-text h1{
-    font-size: 70px;
+    font-size: 40px;
     color:white;
-    text-shadow: -2px 5px 0 #000,
-    5px 5px 0 #000,
-    5px -2px 0 #000,
-    -2px -2px 0 #000;
+    text-shadow: 0px -2px 0 #000,
+    0px -2px 0 #000,
+    2px -2px 0 #000,
+    2px -2px 0 #000;
 }
 .header-text h2{
-    font-size: 60px;
+    font-size: 30px;
     font-weight: 300;
     color:#fcfafafd;
-    text-shadow: -2px 5px 0 #000,
-    5px 5px 0 #000,
-    5px -2px 0 #000,
-    -2px -2px 0 #000;
+    text-shadow: 0px -2px 0 #000,
+    0px -2px 0 #000,
+    2px -2px 0 #000,
+    2px -2px 0 #000;
 }
 .contenedor-productos{
     display: block;
@@ -107,42 +96,21 @@ nav ul a:hover{
     width: 40%;
 }
 /* BestSeller */
-.galeria-productos{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-.hover-galeria{
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    box-shadow: 0 0 6px 0 rgb(0, 0, 0, .5);
-}
-.hover-galeria img{
-    width:450px;
-    height: 450px;
-    object-fit: cover;
-    display: block;
-}
-
-
-.contenedor-descuentos img{
-    width: 150px;
-}
-.contenedor-productos img:hover{
-    padding: 20px;
-    transform: skewY(45deg);
+.precio{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
 }
 h4{
     font-family: 'Mitr', sans-serif;
-    font-size: 50px;
+    font-size: 20px;
 }
 .content-foo a{
-    font-size: 40px;
+    font-size: 20px;
     text-decoration: none;
 }
 .content-foo p{
-    font-size: 40px;
+    font-size: 20px;
     text-decoration: none;
 }
 @media (max-width:860px) {
