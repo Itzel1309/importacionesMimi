@@ -1,0 +1,14 @@
+.contenedor_productos{
+    display: block;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    img{
+        width: 40%;
+    }
+    .precio{
+        text-align: center;
+        font-size: 25px;
+    }
+}
