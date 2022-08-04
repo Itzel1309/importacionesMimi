@@ -1,6 +1,6 @@
 header{
     width: 100%;
-    height: 200px;
+    height: 300px;
     background: $clr-fondo;
 }
 nav{
@@ -20,10 +20,11 @@ nav{
 }
 .header-text{
     display: flex;
-    height: 200px;
+    height: 150px;
     width: 100%;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
     h1{
         font-size: 40px;
         color:$font-principal;

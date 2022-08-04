@@ -1,14 +1,14 @@
-.contenedor_productos{
-    display: block;
+.contenedor-productos{
     margin: auto;
     background-color: white;
     display: flex;
-    justify-content: space-evenly;
-    img{
-        width: 40%;
-    }
-    .precio{
-        text-align: center;
-        font-size: 25px;
-    }
+    justify-content: space-evenly
+}
+img{
+    width: 50%;
+}
+.precio{
+    text-align: center;
+    font-family: $ff-header;
+    font-size: 25px;
 }
