@@ -1,8 +1,30 @@
+.header-text{
+    display: flex;
+    height: 150px;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        @include title;
+        font-size: 40px;
+    }
+    h2{
+        @extend h1;
+        font-size: 30px;
+    }
+}
+.bestseller{
+        h2{
+            @include title;
+            font-size: 50px;
+        }
+}
 .contenedor-productos{
-    margin: auto;
+    padding: auto;
     background-color: white;
     display: flex;
-    justify-content: space-evenly
+    justify-content: space-evenly;  
 }
 img{
     width: 50%;
@@ -11,4 +33,14 @@ img{
     text-align: center;
     font-family: $ff-header;
     font-size: 25px;
+}
+.container{
+    padding: 100px;
+    .precio{
+        font-size: 15px;
+        font-family: $ff-main;
+    }
+    button{
+        align-items: center;
+    }
 }

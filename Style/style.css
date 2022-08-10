@@ -6,8 +6,8 @@
 
 header {
   width: 100%;
-  height: 300px;
-  background: linear-gradient(to right, rgba(138, 255, 253, 0.384), rgba(240, 51, 218, 0.493)); }
+  height: 150px;
+  background: #5386f3; }
 
 nav {
   text-align: center;
@@ -25,18 +25,22 @@ nav {
   justify-content: center;
   flex-direction: column;
   align-items: center; }
-  .header-text h1 {
-    font-size: 40px;
-    color: white;
-    text-shadow: 0px -2px 0 #000, 0px -2px 0 #000, 2px -2px 0 #000, 2px -2px 0 #000; }
-  .header-text h2 {
-    font-size: 30px;
+  .header-text h1, .header-text h2 {
     font-weight: 300;
-    color: white;
-    text-shadow: 0px -2px 0 #000, 0px -2px 0 #000, 2px -2px 0 #000, 2px -2px 0 #000; }
+    color: #304F8C;
+    text-shadow: 0px -2px 0 #08A689, 0px -2px 0 #08A689, 2px -2px 0 #08A689, 2px -2px 0 #08A689;
+    font-size: 40px; }
+  .header-text h2 {
+    font-size: 30px; }
+
+.bestseller h2 {
+  font-weight: 300;
+  color: #304F8C;
+  text-shadow: 0px -2px 0 #08A689, 0px -2px 0 #08A689, 2px -2px 0 #08A689, 2px -2px 0 #08A689;
+  font-size: 50px; }
 
 .contenedor-productos {
-  margin: auto;
+  padding: auto;
   background-color: white;
   display: flex;
   justify-content: space-evenly; }
@@ -49,15 +53,30 @@ img {
   font-family: "Raleway", sans-serif;
   font-size: 25px; }
 
+.container {
+  padding: 100px; }
+  .container .precio {
+    font-size: 15px;
+    font-family: "Josefin Sans", sans-serif; }
+  .container button {
+    align-items: center; }
+
 footer {
-  background-color: linear-gradient(to right, rgba(138, 255, 253, 0.384), rgba(240, 51, 218, 0.493));
+  background: #5386f3;
   background-size: cover;
   background-attachment: fixed;
   position: relative; }
 
-.contenedor-footer {
-  font-size: 20px;
-  font-family: "Josefin Sans", sans-serif; }
-  .contenedor-footer h4 p {
-    text-decoration: none;
-    color: white; }
+.content-foo {
+  color: #304F8C;
+  font-style: "Raleway", sans-serif;
+  font-size: 30px; }
+  .content-foo p {
+    margin: 0; }
+  .content-foo a {
+    color: #304F8C;
+    font-style: "Raleway", sans-serif;
+    font-size: 25px;
+    text-decoration: none; }
+    .content-foo a:hover {
+      text-decoration: underline; }

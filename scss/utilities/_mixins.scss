@@ -1,0 +1,13 @@
+@mixin title{
+    font-weight: 300;
+    color:$font-principal;
+    text-shadow: 0px -2px 0 #08A689,
+    0px -2px 0 #08A689,
+    2px -2px 0 #08A689,
+    2px -2px 0 #08A689;
+    }
+
+@mixin footer{
+    color:$clr-blue1;
+    font-style: $ff-header;
+}
