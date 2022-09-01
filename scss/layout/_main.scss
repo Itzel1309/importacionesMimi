@@ -28,7 +28,7 @@
     justify-content: center;
     img{
         align-items: center;
-    }
+        }
 }
 .precio{
     text-align: center;
@@ -42,23 +42,23 @@
         font-family: $ff-main;
     }
 }
-.row{
-    display: flex;
-    flex-wrap: nowrap;
-    }
 
 .btn{
     border: solid 2px $clr-green;
     border-radius: 2px;
     padding: 0.7em 1.5em;
 }
+.row{
+    @include tablet{
+        display: flex;
+        flex-direction: row;
+    }
+}
 .producto{
-    margin: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    margin: 15px;
     border:solid 2px $clr-yellow;
     border-radius: 10px;
-    
 }

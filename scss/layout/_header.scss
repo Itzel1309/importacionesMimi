@@ -3,7 +3,17 @@ header{
     height: 120px;
     background: $clr-fondo;
 }
+.navbar ul.navbar{
+    @include tablet{
+        display: block;
+    }
+}
 nav{
+    & .navbar ul.navbar{
+        @include tablet{
+            display: block;
+        }
+    }
     ul{
         li{
             list-style: none;
